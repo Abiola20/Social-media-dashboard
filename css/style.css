@@ -1,0 +1,118 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: rgb(67, 136, 216);
+}
+#header{
+    display: flex;
+    padding: 7% 12%;
+    background-color: whitesmoke;
+    justify-content: space-between;
+    /* position: relative; */
+}
+.fl{
+    background-color: whitesmoke;
+    text-align: center;
+    padding-top: 30px;
+}
+.fl:hover{
+    background-color: rgb(209, 202, 202);
+}
+.follow{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0  12%;
+    grid-auto-rows: 200px;
+    grid-column-gap: 15px;
+}
+.overview{
+    padding: 4% 12%;
+}
+.overview >h4{
+    color: rgb(190, 185, 185);
+}
+.view{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 2%;
+    grid-auto-rows: 150px;
+    column-gap: 15px;
+    row-gap: 15px;
+    /* grid-auto-rows: 150px; */
+}
+/* .view p{
+    padding-bottom: 50%;
+} */
+.facebook, .twitter{
+    border-top: 4px solid hsl(203, 89%, 53%);
+}
+.youtube{
+    border-top: 4px solid hsl(348, 97%, 39%);
+}
+.instagram{
+    position: relative;
+}
+.instagram .adirogo{
+    position: absolute;
+    top: 0px;
+    width: 100px;
+    height: 4px;
+    background:linear-gradient(to right hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+.follow p{
+    letter-spacing: 4px;
+}
+.ovr{
+    display: flex;
+    justify-content: space-around;
+}
+.icn{
+    display: block;
+    padding-bottom: 100%;
+    position: relative;
+    right: -25px;
+}
+.up{
+    color: hsl(163, 72%, 41%);
+}
+.down{
+    color: hsl(356, 69%, 56%);
+}
+@media (max-width: 750px ){
+    body{
+        text-align: center;
+    }
+    .follow{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0  12%;
+        grid-auto-rows: 200px;
+        column-gap: 15px;
+        row-gap: 15px;
+        /* text-align: center; */
+    }
+    .view{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 2%;
+        grid-auto-rows: 150px;
+        column-gap: 15px;
+        row-gap: 15px;
+        /* text-align: center; */
+    }
+    .ovr{
+        display: flex;
+        justify-content: center;
+    }
+    .fl{
+        width: 50%;
+        margin: 0 auto;
+    }
+}
